@@ -49,7 +49,7 @@ export default {
     async fetchQuestion() {
       try {
         this.revealed = false;
-        let res = await fetch("http://jservice.io/api/random");
+        let res = await fetch("https://jservice.io/api/random");
         let data = await res.json();
         if (
           !data[0].question ||
